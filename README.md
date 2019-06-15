@@ -37,6 +37,9 @@ The songs are linked to Spotify and the video is from YouTube.
 
 ### Acknowledgements
 
+The website default look is inspired by: https://aleesang.github.io/milestone-project-one/
+I put my own twist to it using my own personal touch.
+
 The submit button function to set a max-width on smaller devices is used from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
 
 Code for when clicking submit for form was found on: https://www.w3schools.com/js/js_popup.asp
