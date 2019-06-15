@@ -9,10 +9,10 @@ It's a website created using User-Centric Frontend Development. I chose to build
 ## UX
 My goal was to make the design simple and easy to navigate through but yet appealing. The colors I chose were colors that personally are one of my favorites and also very modern and elegant ones.
 
-##Technologies
-*HTML
-*CSS
-*Bootstrap (4.1.3)
+## Technologies
+* HTML
+* CSS
+* Bootstrap (4.1.3)
 
 ## Features
 I also used a JavaScript function added to create an "autoresponse" when submitting in my forms. The navigation style I chose to use was a fixed navigation, due to the one page layout design. The fixed navigation allows for a userfriendly experience on this site. There are 5 pages and very easy to maneuver through.
