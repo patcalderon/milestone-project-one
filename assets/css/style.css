@@ -4,16 +4,13 @@ body {
     font-family: 'Abel', sans-serif;
     text-align: center;
     margin-top: 90px;
-
 }
 
 .uppercase {
     text-transform: uppercase;
 }
 
-
 /*-------Header image-------*/
-
 
 .header-img {
     background: url('../images/headerimg.jpg') no-repeat center center;
@@ -22,9 +19,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     padding-bottom: 46%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
-
 }
-
 
 /*-------Content containers-------*/
 
@@ -422,7 +417,7 @@ footer {
 }
 
 /*-------Social links-------*/
-    
+
 .social-links li a i {
     width: 65px;
     height: 65px;
@@ -434,6 +429,13 @@ footer {
     color: #fafafa;
     background: #000000;
      
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px;
 }
 
 .social-links li a i:hover {
