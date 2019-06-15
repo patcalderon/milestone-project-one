@@ -18,12 +18,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 46%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
+    padding-bottom: 46%;
 }
 
 /*-------Content containers-------*/
 
-.container-wrapper--daveabout {
+.container-wrapper-daveabout {
     background: url('../images/aboutsection.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -31,7 +31,7 @@ body {
     background-size: cover;
 }
 
-.container-wrapper--davemusic {
+.container-wrapper-davemusic {
     background: url('../images/musicsection.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -39,7 +39,7 @@ body {
     background-size: cover;
 }
 
-.container-wrapper--davevideo {
+.container-wrapper-davevideo {
     background: url('../images/videosection.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,7 +47,7 @@ body {
     background-size: cover;
 }
 
-.container-wrapper--davetour {
+.container-wrapper-davetour {
     background: url('../images/toursection.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -205,6 +205,10 @@ textarea {
     -o-transition: all 0.35s ease-in-out;     
 }
 
+.responsive-image {
+    box-shadow: none;
+}
+
 /*-------Color change of collapsable menu-------*/
 
 .custom-toggler .navbar-toggler-icon {
@@ -309,7 +313,9 @@ button:focus {
     background-color: rgb(89, 89, 89);    
 }
 
-
+img {
+    box-shadow: 0 11px 7px 0 rgba(0, 29, 42, 0.5), 0 11px 18px 0 rgba(0, 13, 16, 0.2);
+}
 
 /*-------Video-------*/
 
@@ -324,10 +330,12 @@ button:focus {
 }
 
 .video-container {
-    height: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 11px 7px 0 rgba(0, 29, 42, 0.5), 0 11px 18px 0 rgba(0, 13, 16, 0.2);
 }
 
 .video-container-ratio {
