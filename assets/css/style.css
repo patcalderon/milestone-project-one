@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Abel:100,200,300,400,500,600,700|Nunito:100,200,300,400,500,600,700');
+
+body {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/*-------Header image-------*/
+
+
+.header-img {
+    background: url('../images/headerimg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 46%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
+
+}
+
+
+/*-------Content containers-------*/
+
+.container-wrapper--daveabout {
+    background: url('../images/aboutsection.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--davemusic {
+    background: url('../images/musicsection.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--davevideo {
+    background: url('../images/videosection.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--davetour {
+    background: url('../images/toursection.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.about-content-container, 
+.music-content-container,
+.video-content-container,
+.photo-content-container,
+.tour-content-container,
+.follow-content-container{
+    padding: 95px 40px 95px 40px;
+}
+
+/*-------Vertical stack in mobile-------*/  
+
+ @media (max-width: 800px) {
+     .grid-container > div {
+         margin-bottom: 15px;
+     }
+  }
+   
+
+/*-------Modal-------*/
+    
+.modal-body {
+    color: #e5e5e5;  
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #787878; 
+    padding: 20px; 
+}
+
+.btn-dark {
+    background-color: rgb(0, 0, 0);
+    color: rgb(237, 227, 222);
+    border: none;
+    padding: 14px 20px;
+    margin: auto;
+    text-transform: uppercase;    
+    font-family: 'Abel', sans-serif;
+    border-radius: 0px;
+}
+
+.btn-dark:hover {
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);
+}
+
+.btn-dark:active:focus {
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);
+}
+
+/*-------Read More button-------*/
+   
+.link-btn {
+    color: #fffff;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.link-btn:hover {
+    color: #867979;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.link-btn:focus {
+    color: #fffff;
+    outline: 0;
+}
+
+
+/*-------Images-------*/
+
+.img-hover:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+/*-------Forms-------*/
+
+::placeholder {
+    color: grey !important;
+    text-transform: uppercase;
+}
+
+input[type=email] {
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;  
+    border-color: #ede3de; 
+    border-radius:0px;
+}
+
+
+textarea {
+    margin: 0px;
+    text-indent: 0.05em;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: #ede3de; 
+    border-radius:0px;
+}
+
+/*-------Max-width on submit button for smaller devices-------*/
+
+@media screen and (max-width: 600px) {
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/*-------Navbar-------*/
+
+.navbar-bg {
+    background-color: rgb(239, 239, 232);
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: larger;
+}
+
+.navbar-brand:hover {
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;     
+}
+
+.navbar-nav li a {
+    color: #000000 !important;
+}
+
+.navbar-nav li a:hover {
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;     
+}
+
+/*-------Color change of collapsable menu-------*/
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #000000;
+} 
+
+.custom-toggler.navbar-toggler:hover {
+    opacity: 0.8;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+} 
+
+button:focus { 
+    outline:0 !important; 
+}
+
+.nav-link {
+    color: #dbc7bd;
+    font-size: large;
+}
+
+.nav-link:hover {
+    color: #dbc7bd;
+    opacity: 0.6;
+}
+
+.nav-link:focus {
+    color: #dbc7bd;
+    outline: 0;
+}
+
+
+/*-------About-------*/
+
+.about-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+.bio-content {
+    text-align: left;   
+    font-weight: bold;
+    font-size: large;
+    padding: 20px;
+    color: #000000;
+}
+
+
+
+/*-------Music-------*/
+
+.music-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.music-player {
+    padding-bottom:4%; 
+    padding-top:5%;
+    width: 100%;
+    margin: auto;
+    border: none;
+}
+
+.buy-btn {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    background-color: black;
+    color: #dbc7bd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);    
+}
+
+
+
+/*-------Video-------*/
+
+.video-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.video-container {
+    height: 0;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.video-container-ratio {
+    padding-bottom: 35%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+/*-------Tour-------*/
+
+.tour-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/*-------Book Dave for events-------*/
+
+.enquiries {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding: 30px 0px 20px 0px;
+}
+
+.tour-content {
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.calendar-icon {
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+/*-------Follow-------*/
+
+.follow-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/*-------Footer-------*/
+
+footer {
+    background-color: rgb(239, 239, 232);
+    margin: 0;
+    position: absolute;    
+    padding: 65px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*-------Newsletter signup-------*/
+
+.mail-content-container {
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+    margin: auto;
+}
+
+/*-------Social links-------*/
+    
+.social-links li a i {
+    width: 65px;
+    height: 65px;
+    padding: 28px 0px;
+    border-radius: 60%;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    color: #fafafa;
+    background: #000000;
+     
+}
+
+.social-links li a i:hover {
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;    
+}
